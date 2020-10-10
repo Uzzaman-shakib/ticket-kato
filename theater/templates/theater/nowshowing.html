@@ -1,0 +1,28 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+
+<h2>Now Showing</h2>   
+
+<div class="imagecontainer">       
+    <div class="polaroid">
+      <a href="{% url 'aynabaji' %}"><img src="{% static 'Aynabaji.jpg' %}" alt="5 Terre" style="width:100%"></a>
+    </div>
+    
+    <div class="polaroid">
+      <a href="#"><img src="{% static 'Avengers Endgame.jpg' %}" alt="5 Terre" style="width:100%"></a>
+    </div>
+        
+    <div class="polaroid">
+      <a href="#"><img src="{% static 'godzilla.jpg' %}" alt="5 Terre" style="width:100%"></a>     
+    </div>
+        
+    <div class="polaroid">
+      <a href="#"><img src="{% static 'Spider Man.jpg' %}" alt="5 Terre" style="width:100%"></a>    
+    </div>
+   
+</div>
+
+    <a href="{%url 'ticketbooking'%}"><button class="btn btn-outline-info" type="submit">Buy Ticket</button></a>
+         
+{% endblock content %}

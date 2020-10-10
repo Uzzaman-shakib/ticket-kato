@@ -1,0 +1,29 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+    <a href="{% url 'theater-home' %}"><h2>Ticket Kato</h2></a>
+        {% if user.is_authenticated %}
+            <form action="nowshowing">
+                <p>Pick up a Multiplex :
+                    <select>
+                      <option value="Star cineplex (Basundhara City)">Star cineplex (Basundhara City)</option>
+                      <option value="Star cineplex (Shimmanto Somvar)">Star cineplex (Shimmanto Somvar)</option>
+                      <option value="opel">Blockbuster Cinemas (Jamuna Future Park)</option>
+                      <option value="Shamoly cimena">Shamoly cimena</option>
+                    </select></p>
+                <button class="btn btn-outline-info" type="submit">select</button>
+            </form>
+        {% else%}
+            <form action="login">
+                <p>Pick up a Multiplex :
+                    <select>
+                      <option value="Star cineplex (Basundhara City)">Star cineplex (Basundhara City)</option>
+                      <option value="Star cineplex (Shimmanto Somvar)">Star cineplex (Shimmanto Somvar)</option>
+                      <option value="opel">Blockbuster Cinemas (Jamuna Future Park)</option>
+                      <option value="Shamoly cimena">Shamoly cimena</option>
+                    </select></p>
+                <button class="btn btn-outline-info" type="submit">Select</button>
+            </form>
+        {% endif %}
+                   
+{% endblock content %}

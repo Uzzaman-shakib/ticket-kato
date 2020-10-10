@@ -1,0 +1,21 @@
+{% extends "theater/base.html" %}
+{% block content %}
+<legend>Your Ticket</legend>
+<div class="content-section">
+        <p>Theater    : {{ theater }}</p>
+        <p>Name       : {{ name }}</p>
+        <p>Movie      : {{ movie_name }}</p>
+        <p>Date       : {{ date }}</p>
+        <p>Time       : {{ time }}</p>
+        <p>Hall Type  : {{ hall_type }}</p>
+        <p>Total Seat : {{ total_seat }}</p>  
+</div>
+<div class="form-group">
+    <button class="btn btn-outline-info" type="#">Print Ticket</button>
+    <button class="btn btn-outline-info" type="#">Download PDF</button>  
+</div> 
+    
+{% endblock content %}
+    
+    
+ 

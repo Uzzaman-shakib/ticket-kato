@@ -1,0 +1,27 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+
+<form action="{% url 'contact' %}" method="POST">
+{% csrf_token %}
+    <div class="container">
+        <legend>Contact</legend>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" required>
+        <br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Your Email" name="email" required>
+        <br>
+      <label for="subject"><b>Subject</b></label>
+      <input type="text" placeholder="Subject" name="subject" >
+        <br>
+      <label for="message"><b>Message</b></label>
+      <textarea name="message" placeholder="Write something.." style="height:100px"></textarea>
+        <br>
+      <a><button class="btn btn-outline-info" type="submit">Send Message</button></a>
+
+    </div>
+  </form>
+         
+{% endblock content %}
+

@@ -1,0 +1,56 @@
+{% extends "theater/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <form method="POST" action="{%url 'ticketbooking'%}">
+        {% csrf_token %}
+       <div class="container"> 
+            <legend class="boder-bottom mb-4">Book your ticket here</legend>
+            
+            <label for="Movie_name"><b>Movie Name</b></label>
+         <br>
+            <select name="Movie_name" required>
+                <option value="Godzilla : King Of The Monsters (3D)">Godzilla : King Of The Monsters (3D)</option>
+                <option value="Avengers : Endgame (3D)">Avengers : Endgame (3D)</option>
+                <option value="Aynabaji (2D)">Aynabaji (2D)</option>
+                <option value="Spiderman : Far From Home (3D)">Spiderman : Far From Home (3D)</option>
+            </select>
+        <br>
+      
+            <label for="date"><b>Date</b></label>
+         <br>
+            <input type="date" name="Date" required>
+       <br>
+            <label for="Time"><b>Show-Time</b></label>
+         <br>
+            <select name="Time" required>
+                <option value="10.50 am">10.50 am</option>
+                <option value="2.40 pm">2.40 pm</option>
+                <option value="4.50 pm">4.50 pm</option>
+                <option value="8.00 pm">8.00 pm</option>
+            </select>
+       <br>
+            <label for="hall"><b>Hall Type</b></label>
+         <br>
+            <select name="Hall_type" required>
+                <option value="Hall 1">Hall 1</option>
+                <option value="Hall 4">Hall 4</option>
+                <option value="Hall 6(Dolby Atmos)">Hall 6(Dolby Atmos)</option>
+                <option value="Hall 7 (VIP)">Hall 7 (VIP)</option>
+            </select>
+          <br>   
+            <label for="Total seat"><b>Total Seat</b></label>
+         <br>
+            <input type="number" name="Total_seat" required>
+
+        
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Book ticket</button>
+        </div>
+           </div> 
+    </form>
+
+{% endblock content %}
+
+

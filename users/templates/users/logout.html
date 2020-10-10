@@ -1,0 +1,12 @@
+{% extends "theater/base.html" %}
+
+{% block content %}
+<div class="content-section col-md-8">
+    <h3>You have been logged out</h3>
+    <div class="border-top-pt-3">
+        <small class="text-muted">
+            <a class="ml-2" href="{% url 'login' %}">Log In Again</a>
+        </small>   
+    </div>
+</div>          
+{% endblock content %}

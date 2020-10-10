@@ -1,0 +1,32 @@
+{% extends "theater/base.html" %}
+{% block content %}
+<h2><strong>Pay your bill here</strong></h2>
+<form method="POST" action="{%url 'payment'%}">
+        {% csrf_token %}
+    
+    <div class="container">
+        <legend>Mobile banking</legend>
+        <label for="Banking_name"><b>Select Your Mobile Banking System</b></label>
+         <br>
+            <select name="Banking_name">
+                <option value="Bkash">Bkash</option>
+                <option value="Rocket">Rocket</option>
+                <option value="Sure Cash">Sure Cash</option>
+                <option value="Ucash">Ucash</option>
+            </select> 
+        <br>
+        <label for="Account"><b>Account No.</b></label>
+         <br>
+            <input type="text" name="Account"> 
+        <br>
+        <label for="password"><b>Password</b></label>
+         <br>
+            <input type="Password" name="password" required>       
+        <br>
+        <div class="form-group">
+            <a href="{% url 'printticket' %}"><button class="btn btn-outline-info" type="submit">Pay</button> </a>   
+        </div>   
+        
+    </div>   
+</form>   
+{% endblock content %}
