@@ -1,4 +1,4 @@
-# ticket-kato
+# Ticket-Kato
 Movie ticket booking system
 
 #Instalation requerment 
