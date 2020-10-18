@@ -1,8 +1,10 @@
-<h3><b>Ticket-Kato</b></h3>
+<h3>Ticket-Kato</h3>
 
-<h1>Movie ticket booking system</h1>
+Movie ticket booking system
 
 <h3>Description</h3>
+
+
 
 <h3>Instalation requerment</h3>
 1. Python 3.7.0 or higher 
