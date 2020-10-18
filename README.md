@@ -1,4 +1,4 @@
-#Project name: # Ticket-Kato
+#Ticket-Kato
 Movie ticket booking system
 
 #Instalation requerment 
