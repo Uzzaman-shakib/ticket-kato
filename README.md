@@ -38,7 +38,8 @@ We created a turorial/navigation video for this project that is given below : -
 https://www.youtube.com/watch?v=ozw_mIcKU_k&t=3s
 
 
-<h3>Contributes</h3>
+<h3>Contributions</h3>
+
 * Shakib Uzzaman (email - shakib96zaman@gmail.com)
 * Myen Uddin Khondoker (email - myensharif@gmail.com)
 * Mahedi Hassan Shuvo (email - 17101053@uap-bd.edu)
